@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Details = () => {
     const data = useLoaderData();
+    console.log(data)
+    const { user } = useContext(AuthContext)
+    const userEmail = user?.email
 
     const price = data?.price || 0;
     const name = data?.name || "Product Name";
@@ -13,9 +17,40 @@ const Details = () => {
     const brand = data?.brand || "Brand";
     const ratings = data?.ratings || 0;
     const createdAt = data?.created_at ? new Date(data.created_at).toLocaleDateString() : "Unknown";
+    const productId = data?._id || "unknown-id";
+    const productLink = `http://localhost:8000/details/${productId}`;
+
+    const handleAddToCart = async () => {
+        try {
+            const response = await fetch('http://localhost:8000/cart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    productId,
+                    image,
+                    name,
+                    description,
+                    productLink,
+                    userEmail,
+                    price
+                }),
+            });
+
+            if (response.ok) {
+                alert('Product added to cart successfully!');
+            } else {
+                alert('Failed to add product to cart.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while adding the product to the cart.');
+        }
+    };
 
     return (
-        <section className="py-12 bg-gradient-to-r  ">
+        <section className="py-12 bg-gradient-to-r from-blue-100 to-blue-200">
             <Helmet>
                 <title>{name} - Product Details</title>
             </Helmet>
@@ -45,8 +80,12 @@ const Details = () => {
                             <span>Added on: {createdAt}</span>
                         </div>
                         <div className='flex items-center gap-5'>
-                            <button className='text-lg bg-purple-700 hover:bg-purple-800 text-white p-3 rounded-lg shadow-lg transition duration-300 ease-in-out'>Add To Cart</button>
-                            <button className='text-lg bg-purple-700 hover:bg-purple-800 text-white p-3 rounded-lg shadow-lg transition duration-300 ease-in-out'>Buy Now</button>
+                            <button
+                                className='text-lg bg-purple-700 hover:bg-purple-800 text-white p-3 rounded-lg shadow-lg transition duration-300 ease-in-out'
+                                onClick={handleAddToCart}
+                            >
+                                Add To Cart
+                            </button>
                         </div>
                     </div>
                 </div>

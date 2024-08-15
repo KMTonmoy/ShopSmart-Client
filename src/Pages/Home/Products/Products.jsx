@@ -178,8 +178,8 @@ const Products = () => {
                         className="p-2 border border-gray-300 rounded-md"
                     >
                         <option value="">Sort By</option>
-                        <option value="priceLowToHigh">Price: Low to High</option>
-                        <option value="priceHighToLow">Price: High to Low</option>
+                        <option value="priceHighToLow">Price: Low to High</option>
+                        <option value="priceLowToHigh">Price: High to Low</option>
                         <option value="dateNewestFirst">Date: Newest First</option>
 
                     </select>
