@@ -121,7 +121,7 @@ const Testimonials = () => {
                     loop={true}
                     pagination={{ clickable: true }}
                     modules={[Pagination]}
-                    className="rounded-lg"
+                    className="rounded-lg "
                 >
                     {testimonials.map((testimonial, index) => (
                         index % 3 === 0 && (
@@ -130,11 +130,11 @@ const Testimonials = () => {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ duration: 1 }}
-                                    className="p-6 flex justify-center"
+                                    className="p-6 flex justify-center "
                                 >
                                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                                         {testimonials.slice(index, index + 3).map((t) => (
-                                            <div key={t._id} className="bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                                            <div key={t._id} className="bg-white border border-gray-200 rounded-lg p-6 shadow-md mb-5">
                                                 <p className="text-lg italic text-gray-700">"{t.quote}"</p>
                                                 <h3 className="text-xl font-semibold mt-4">- {t.name}</h3>
                                             </div>

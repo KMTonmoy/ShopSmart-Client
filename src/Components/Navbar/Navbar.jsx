@@ -75,7 +75,7 @@ const Navbar = () => {
                     <Link to="/login" className="px-4 py-2 hover:bg-blue-800 lg:hover:bg-transparent flex items-center">
                         <FaSignInAlt className="mr-1" /> Login
                     </Link>
-                    <Link to="/login" className="px-4 py-2 hover:bg-blue-800 lg:hover:bg-transparent flex items-center">
+                    <Link to="/signup" className="px-4 py-2 hover:bg-blue-800 lg:hover:bg-transparent flex items-center">
                         <FaSignInAlt className="mr-1" /> Sign Up
                     </Link>
 
