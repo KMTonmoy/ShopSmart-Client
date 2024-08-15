@@ -18,7 +18,7 @@ const Testimonials = () => {
     }, []);
 
     const fetchTestimonials = () => {
-        fetch('https://classmaster-server.vercel.app/testimonials')
+        fetch('http://localhost:8000/testimonials')
             .then((response) => response.json())
             .then((data) => setTestimonials(data))
             .catch((error) => {
@@ -34,7 +34,7 @@ const Testimonials = () => {
             name: userName,
         };
 
-        fetch('https://classmaster-server.vercel.app/testimonial', {
+        fetch('http://localhost:8000/testimonial', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

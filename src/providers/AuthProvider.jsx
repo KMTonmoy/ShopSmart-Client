@@ -1,19 +1,12 @@
 import { createContext, useEffect, useState } from "react";
-import {
-    createUserWithEmailAndPassword,
-    getAuth,
-    onAuthStateChanged,
-    signInWithEmailAndPassword,
-    signOut,
-    updateProfile
-} from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { app } from "../firebase/firebase.config";
 import axios from 'axios';
 
 export const AuthContext = createContext(null);
 
 const auth = getAuth(app);
-
+const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
@@ -43,10 +36,22 @@ const AuthProvider = ({ children }) => {
         }
     };
 
+    const signInWithGoogle = async () => {
+        setLoading(true);
+        try {
+            await signInWithPopup(auth, googleProvider);
+        } catch (error) {
+            console.error("Error signing in with Google:", error);
+            throw error;
+        } finally {
+            setLoading(false);
+        }
+    };
+
     const logOut = async () => {
         setLoading(true);
         try {
-            await axios.get(`https://classmaster-server.vercel.app/logout`, {
+            await axios.get(`http://localhost:8000/logout`, {
                 withCredentials: true,
             });
             await signOut(auth);
@@ -58,11 +63,11 @@ const AuthProvider = ({ children }) => {
         }
     };
 
-    const updateUserProfile = async (name, pin) => {
+    const updateUserProfile = async (name, photo) => {
         try {
             await updateProfile(auth.currentUser, {
                 displayName: name,
-                photoURL: pin
+                photoURL: photo,
             });
         } catch (error) {
             console.error("Error updating user profile:", error);
@@ -73,7 +78,7 @@ const AuthProvider = ({ children }) => {
     const getToken = async (email) => {
         try {
             const { data } = await axios.post(
-                `https://classmaster-server.vercel.app/jwt`,
+                `http://localhost:8000/jwt`,
                 { email },
                 { withCredentials: true }
             );
@@ -85,14 +90,50 @@ const AuthProvider = ({ children }) => {
     };
 
 
+    const saveUser = async (user) => {
+        try {
+
+            const existingUserResponse = await axios.get(
+                `http://localhost:8000/users/${user?.email}`
+            );
+            const existingUser = existingUserResponse.data;
+
+
+            if (existingUser) {
+
+                return existingUser;
+            }
+
+
+            const currentUser = {
+                email: user?.email,
+                name: user.displayName,
+                role: 'user',
+            };
+            const { data } = await axios.put(
+                `http://localhost:8000/user`,
+                currentUser
+            );
+            // // console.log("User saved:", data);
+            return data;
+        } catch (error) {
+            console.error("Error saving user:", error);
+            throw error;
+        }
+    };
+
+
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
             setUser(currentUser);
             if (currentUser) {
                 try {
-                    const token = await getToken(currentUser.email)
+                    const token = await getToken(currentUser.email);
+                    await saveUser(currentUser);
                     localStorage.setItem('access-token', token);
 
+                    // Set Axios default headers
                     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
                 } catch (error) {
                     console.error("Error handling auth state change:", error);
@@ -110,6 +151,7 @@ const AuthProvider = ({ children }) => {
         loading,
         createUser,
         signIn,
+        signInWithGoogle,
         logOut,
         updateUserProfile
     };
