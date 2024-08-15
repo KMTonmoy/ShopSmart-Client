@@ -128,7 +128,10 @@ const Products = () => {
 
     return (
         <div className="p-4 my-10">
+            <Helmet>
+                <title>Products || SmartShop</title>
 
+            </Helmet>
             <div className="mb-4 md:px-[160px] flex flex-col flex-wrap space-y-4">
                 <div className="flex">
                     <input

@@ -5,6 +5,9 @@ import About from "../Pages/AboutUs/Aboutus";
 import Contact from "../Pages/Contact/Contact";
 import Signup from "../Pages/Signup/Signup";
 import Login from "../Pages/Login/Login";
+import Products from "../Pages/ProductsPage/Products";
+import Details from "../Pages/Home/Details/Details";
+
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +33,15 @@ export const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Signup />,
+            },
+            {
+                path: "/products",
+                element: <Products />,
+            },
+            {
+                path: "/details/:id",
+                element: <Details />,
+                loader: ({ params }) => fetch(`http://localhost:8000/product/${params.id}`)
             },
         ]
     },

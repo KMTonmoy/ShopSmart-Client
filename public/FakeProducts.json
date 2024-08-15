@@ -1,7 +1,7 @@
 [
     {
         "name": "Wireless Bluetooth Headphones",
-        "image": "https://example.com/images/headphones.jpg",
+        "image": "https://s.alicdn.com/@sc04/kf/H81d0fc6b2f8744d0b704ab2341a2812eE.jpg_300x300.jpg",
         "description": "High-quality wireless Bluetooth headphones with noise-cancellation and 20 hours of battery life.",
         "price": 59.99,
         "category": "Electronics",
@@ -11,7 +11,7 @@
     },
     {
         "name": "4K Ultra HD Smart TV",
-        "image": "https://example.com/images/smart-tv.jpg",
+        "image": "https://www.rundatech.co.ke/wp-content/uploads/2024/03/Vision-Plus-75-inch-V-OS-4K-Smart-TV-2.webp",
         "description": "55-inch 4K Ultra HD Smart TV with HDR and built-in streaming apps.",
         "price": 799.99,
         "category": "Electronics",
@@ -21,7 +21,7 @@
     },
     {
         "name": "Running Shoes",
-        "image": "https://example.com/images/running-shoes.jpg",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/m/4/s/9-700339-9-cultsport-grey-original-imah3efz6smn93zf.jpeg?q=90&crop=false",
         "description": "Lightweight running shoes with cushioned soles for maximum comfort and performance.",
         "price": 69.99,
         "category": "Footwear",
@@ -31,7 +31,7 @@
     },
     {
         "name": "Smartphone with Triple Camera",
-        "image": "https://example.com/images/smartphone.jpg",
+        "image": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2018/10/Vivo_V23_teaser_1640332664551-photoutils.com_.jpeg?fit=1289%2C675&ssl=1",
         "description": "Latest smartphone with a triple camera setup, fast processor, and long-lasting battery.",
         "price": 699.99,
         "category": "Electronics",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Stainless Steel Water Bottle",
-        "image": "https://example.com/images/water-bottle.jpg",
+        "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Water_Bottle_With_Automatic_LED_Temperat-Non_Brand-fc46d-323276.jpg",
         "description": "Eco-friendly stainless steel water bottle with double-wall insulation to keep drinks cold or hot.",
         "price": 19.99,
         "category": "Accessories",
@@ -51,7 +51,7 @@
     },
     {
         "name": "Gaming Keyboard with RGB Lighting",
-        "image": "https://example.com/images/gaming-keyboard.jpg",
+        "image": "https://monarchit.com.bd/public/uploads/all/mehGJSkLU1CrKQ64z7FQlQzIi6oL0GPAHxvsUzye.jpg",
         "description": "Mechanical gaming keyboard with customizable RGB lighting and programmable keys.",
         "price": 89.99,
         "category": "Electronics",
@@ -61,7 +61,7 @@
     },
     {
         "name": "Leather Office Chair",
-        "image": "https://example.com/images/office-chair.jpg",
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/6c70f97e51422d6f659c1456c134c950387a478d/Glitzhome-48-inch-Mid-century-Adjustable-Faux-Leather-Office-Chair.jpg",
         "description": "Ergonomic leather office chair with adjustable height and lumbar support.",
         "price": 149.99,
         "category": "Furniture",
@@ -71,7 +71,7 @@
     },
     {
         "name": "Wireless Charging Pad",
-        "image": "https://example.com/images/charging-pad.jpg",
+        "image": "https://m.media-amazon.com/images/I/61oJr60CdhL.jpg",
         "description": "Sleek wireless charging pad compatible with all Qi-enabled devices.",
         "price": 29.99,
         "category": "Accessories",
@@ -81,7 +81,7 @@
     },
     {
         "name": "Fitness Tracker",
-        "image": "https://example.com/images/fitness-tracker.jpg",
+        "image": "https://cdn.thewirecutter.com/wp-content/media/2023/06/fitnesstrackers-2048px-09819-2x1-1.jpg?auto=webp&quality=75&crop=1.91:1&width=1200",
         "description": "Fitness tracker with heart rate monitor, step counter, and sleep analysis.",
         "price": 49.99,
         "category": "Wearables",
@@ -91,7 +91,7 @@
     },
     {
         "name": "Portable Bluetooth Speaker",
-        "image": "https://example.com/images/bluetooth-speaker.jpg",
+        "image": "https://www.gadstyle.com/wp-content/uploads/2024/03/boat-stone-750-portable-bluetooth-speaker-1.webp",
         "description": "Compact portable Bluetooth speaker with powerful bass and long battery life.",
         "price": 39.99,
         "category": "Electronics",
@@ -101,7 +101,7 @@
     },
     {
         "name": "Electric Kettle",
-        "image": "https://example.com/images/electric-kettle.jpg",
+        "image": "https://i5.walmartimages.com/seo/Mainstays-1-7-Liter-Plastic-Electric-Kettle-White_bc70987c-e80d-4301-8b7a-5f86e1d5a761_2.f463d64e943bc555dc82947c900485ab.jpeg",
         "description": "Fast-boiling electric kettle with automatic shut-off and stainless steel design.",
         "price": 24.99,
         "category": "Kitchen Appliances",
@@ -111,7 +111,7 @@
     },
     {
         "name": "Coffee Maker",
-        "image": "https://example.com/images/coffee-maker.jpg",
+        "image": "https://m.media-amazon.com/images/I/71uLuTiXQlL._AC_SL1500_.jpg",
         "description": "12-cup coffee maker with programmable settings and thermal carafe.",
         "price": 59.99,
         "category": "Kitchen Appliances",
@@ -121,7 +121,7 @@
     },
     {
         "name": "Laptop Backpack",
-        "image": "https://example.com/images/laptop-backpack.jpg",
+        "image": "https://m.media-amazon.com/images/I/51qv8aK9usL._AC_UL1321_.jpg",
         "description": "Durable laptop backpack with multiple compartments and USB charging port.",
         "price": 39.99,
         "category": "Accessories",
@@ -131,7 +131,7 @@
     },
     {
         "name": "Digital Watch",
-        "image": "https://example.com/images/digital-watch.jpg",
+        "image": "https://m.media-amazon.com/images/I/61RdFCDiKcL.jpg",
         "description": "Water-resistant digital watch with alarm, stopwatch, and backlight.",
         "price": 19.99,
         "category": "Wearables",
@@ -141,7 +141,7 @@
     },
     {
         "name": "Electric Toothbrush",
-        "image": "https://example.com/images/electric-toothbrush.jpg",
+        "image": "https://www.colgate.com/content/dam/cp-sites/oral-care/oral-care-center/global/article/colgate-electric-toothbrush.jpg",
         "description": "Rechargeable electric toothbrush with multiple brushing modes.",
         "price": 29.99,
         "category": "Personal Care",
@@ -151,7 +151,7 @@
     },
     {
         "name": "Smart Home Hub",
-        "image": "https://example.com/images/smart-home-hub.jpg",
+        "image": "https://techcrunch.com/wp-content/uploads/2015/09/hub-sensors-on-wood.jpg",
         "description": "Control all your smart devices with this smart home hub with voice control.",
         "price": 79.99,
         "category": "Electronics",
@@ -161,7 +161,7 @@
     },
     {
         "name": "Noise-Cancelling Earbuds",
-        "image": "https://example.com/images/noise-cancelling-earbuds.jpg",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-Soundcore-Space-A40-Noise-Cancelling-Earbuds-Black-4222.jpg",
         "description": "In-ear noise-cancelling earbuds with long battery life and superior sound quality.",
         "price": 99.99,
         "category": "Electronics",
@@ -171,7 +171,7 @@
     },
     {
         "name": "Wireless Mouse",
-        "image": "https://example.com/images/wireless-mouse.jpg",
+        "image": "https://m.media-amazon.com/images/I/61QY3V6A-NL._AC_SL1500_.jpg",
         "description": "Ergonomic wireless mouse with adjustable DPI and long battery life.",
         "price": 19.99,
         "category": "Electronics",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Standing Desk",
-        "image": "https://example.com/images/standing-desk.jpg",
+        "image": "https://i5.walmartimages.com/asr/b4b396b1-b895-4d55-8cfa-85691696a0e6_1.4185f9040585009d7c8a89ac8ddcfb62.jpeg",
         "description": "Adjustable height standing desk with spacious work surface.",
         "price": 199.99,
         "category": "Furniture",
@@ -191,7 +191,7 @@
     },
     {
         "name": "Wireless Security Camera",
-        "image": "https://example.com/images/security-camera.jpg",
+        "image": "https://domar.com/cdn/shop/collections/wifi-cameras.jpg?v=1623942549&width=2048",
         "description": "1080p wireless security camera with night vision and motion detection.",
         "price": 49.99,
         "category": "Electronics",
@@ -201,7 +201,7 @@
     },
     {
         "name": "Electric Rice Cooker",
-        "image": "https://example.com/images/rice-cooker.jpg",
+        "image": "https://m.economictimes.com/thumb/msid-105048452,width-1200,height-1200,resizemode-4,imgsize-44296/best-rice-cookers.jpg",
         "description": "Multi-function electric rice cooker with automatic keep-warm feature.",
         "price": 34.99,
         "category": "Kitchen Appliances",
@@ -211,7 +211,7 @@
     },
     {
         "name": "Digital Camera",
-        "image": "https://example.com/images/digital-camera.jpg",
+        "image": "https://cdn.mos.cms.futurecdn.net/fhHCgdxamwSpjeqdz52EwN-1200-80.png",
         "description": "Compact digital camera with 20MP sensor and 4x optical zoom.",
         "price": 149.99,
         "category": "Electronics",
@@ -231,7 +231,7 @@
     },
     {
         "name": "Smart Thermostat",
-        "image": "https://example.com/images/smart-thermostat.jpg",
+        "image": "https://cdn.thewirecutter.com/wp-content/media/2022/11/smartthermostats-2048px-2898-3x2-1.jpg?auto=webp&quality=75&crop=3:2&width=1024",
         "description": "Smart thermostat with Wi-Fi connectivity and energy-saving features.",
         "price": 129.99,
         "category": "Electronics",
@@ -241,7 +241,7 @@
     },
     {
         "name": "Electric Pressure Cooker",
-        "image": "https://example.com/images/pressure-cooker.jpg",
+        "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/1104X1581/Kenwood_PCM60000SS_Electric_Pressure_Coo-Kenwood-0721a-305063.jpg",
         "description": "6-quart electric pressure cooker with multiple cooking modes and delay timer.",
         "price": 79.99,
         "category": "Kitchen Appliances",
@@ -251,7 +251,7 @@
     },
     {
         "name": "Bluetooth Fitness Scale",
-        "image": "https://example.com/images/fitness-scale.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbgeoGXeGgFKZiBKOC4YeK07FV2IynjNxP7g&s",
         "description": "Bluetooth-enabled fitness scale with body composition analysis and smartphone app.",
         "price": 49.99,
         "category": "Health",
@@ -261,7 +261,7 @@
     },
     {
         "name": "Wireless Earbuds",
-        "image": "https://example.com/images/wireless-earbuds.jpg",
+        "image": "https://www.startech.com.bd/image/cache/catalog/earbuds/earfun/air-s/air-s-01-500x500.webp",
         "description": "True wireless earbuds with touch controls and charging case.",
         "price": 59.99,
         "category": "Electronics",
@@ -271,7 +271,7 @@
     },
     {
         "name": "Electric Hand Mixer",
-        "image": "https://example.com/images/hand-mixer.jpg",
+        "image": "https://vision.com.bd/images/detailed/29/873298_Hand-Mixer-Light_Pink.jpg",
         "description": "Electric hand mixer with multiple speed settings and durable beaters.",
         "price": 19.99,
         "category": "Kitchen Appliances",
@@ -281,7 +281,7 @@
     },
     {
         "name": "Noise-Cancelling Headphones",
-        "image": "https://example.com/images/noise-cancelling-headphones.jpg",
+        "image": "https://cdn.mos.cms.futurecdn.net/ThiXKkp4sA5QGWVKDWyt6g.jpg",
         "description": "Over-ear noise-cancelling headphones with high-fidelity sound and long battery life.",
         "price": 99.99,
         "category": "Electronics",
@@ -291,7 +291,7 @@
     },
     {
         "name": "Digital Kitchen Scale",
-        "image": "https://example.com/images/kitchen-scale.jpg",
+        "image": "data:image/jpeg;base64,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",
         "description": "Precision digital kitchen scale with tare function and easy-to-read display.",
         "price": 14.99,
         "category": "Kitchen Appliances",
@@ -301,7 +301,7 @@
     },
     {
         "name": "Electric Space Heater",
-        "image": "https://example.com/images/space-heater.jpg",
+        "image": "https://www.bdshop.com/pub/media/catalog/product/cache/eaf695a7c2edd83636a0242f7ce59484/t/p/tp-link-wifi-signal-booster-300mbps-universal-wi-fi-range-extender-tl-wa850rejofd.jpg",
         "description": "Portable electric space heater with adjustable thermostat and safety features.",
         "price": 39.99,
         "category": "Home Appliances",
@@ -311,7 +311,7 @@
     },
     {
         "name": "Wi-Fi Range Extender",
-        "image": "https://example.com/images/wifi-extender.jpg",
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATEBIQEBASFhISFhEWEhUWEBAWEREWGBUXGBcWFhMYHSggGBolHRUTITEhJikrLi4wGCAzODMtNygtLisBCgoKDQ0OGxAQGjclHiU3LjcvMzc4KzctNysvKzUxLy0vMC4zNzcsNysrKzctKys4MjgtNTcuKy00KystLTgrNP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEEBQcIAgP/xABCEAACAgEBBAYFCQYEBwAAAAAAAQIDEQQFEiExBgcTQVFhInGBkaEUIzJCUpKxwcIIM1NygqJik7PhJDRDY6PR0v/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/EAB0RAQEAAwACAwAAAAAAAAAAAAABAhEhMTIDEkH/2gAMAwEAAhEDEQA/ANGgAAAAAAAAAAAAAAAAAAAAAAAAHquDk1GKblJpJJNtt8EklzYHkEk2p0D2pp6lfbpJ9m1nei4T3V/iUG3H2kbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALvZWzbtRbGiiDnZPklj2tt8El4sncep7XyrzC2h28X2W9JZ8lY1je8uC8y66jNPF26u3HpQhTBPvSm5t/6a9xt7x9QHK2r0067J1WRcZ1ylCcXzjKLakn6mmfIynSi3e12rl433/wCpLBiwBsfqY6P9rqZauccwo4QzydjX5Rf9y8DXdNUpSjCKblJpRS5tt4SR050G2FHSaSqjhmMVKxr603xbz628eWAJHWsLz7zRfXpsjTU6jT2UQjCd8bXdGKSi3Fx3Z7q4Ze9LPjum9JSSTbeEuLfckcv9PukD12vtvT+bT7OleFUc7vveZeuTNEdABgAAAAAAAAAAAAAAAAAAAAT/AKH9WF+t0j1UrexUnihSrcu1SzmT4rdjlYT48n5ZCAAzfSjorq9BNQ1MFiWdyyL3qrMc92XPPHk0mYQAAANy9R9ONJqJ/auUfP0YJ/rNkTliMm/AhHU9Ru7MjL+JbbL3Yj+kle3r+z0eptx9Cm2X3YOX5GjmLUW705TfOUpP3vJ8wVim3hLi+XizBPOqDYHb6z5ROOatNiXHk7H9H144vye6dBVRwvxIr1d9H1pNHVU0u0fp2vxm+7PfjgvVFErbNED65OkXybQOiD+d1e9WvFVLHaP2pqP9T8Dnsk3WJ0h+W6+22LzVD5unw3It+l/U8y9pGTAAAAAAAAAAAAAAAAAAAAAADf8A1M7Vduzo1NtvTzsr4v6rfaRfq9Ka9hoA2P1IbT7PWW0PldWpR851PeS+7Kz3AbN6zNkLU7M1Ed3M6o9tXwy1Kvi8ebjvr2nNZ1+4JrD4p8/Bpmlth9S2qv1N3az7DSV2zjCbW9bdBS4OEOHBr6z9iYGqTLbF6M67VtfJdJdan9aNcuzXrsfor2s6Y6PdWeydJhw0sbLFj5y/52eV3qL9CL/liiWrgklwS5Jcl7AIH1f9FNTp9n6ei9RhZFTc47yk05WSljMcpvEl3mT6TdGLr9HfRTZBWW1zhHe3lD0k1xaTeOPgSpFQOPukvRLXaGbhq9PKC7prEqpLOE1OPDj4Pj5GX6qtg/KddGcl81p8WS8HL6i96b/pOkekenpkq+2jmDcoP2xck/P6L97MBsTYmm07sWmgownNyeElvYSWcLguXJeGe9gZeqOEQrrd6R/JdA6oSxdqt6uPioY+cl7mo/1E2bOa+sjpF8t19lkZZpr+bp8HGL4yX80svPg14GiLAAwAAAAAAAAAAAAAAAAAAAAAAynRjafybWafUZwq7IOX8mcTXti5IxYA7E2ZBTwu5c/UuXwwZkhnVLtD5Rsyi5tuW6q55571WYNv14i/aTGTANlMlvfqFFNtpJc/BFgts1N43/g8e8qY5XxE3LGeazKKnxpsyfYlSNdONVuV0x77L4xXl83Y2/cVorxFcO5exY4GO6ezT1Ggrysu2yePKMFFv/yL3mMu6S62rVKueic9LZKEa74TXob2E3ZB/VTcvST5JczRZda/SP5JoJQhLF2pzVXh8Yxx85Ncc8IvGVyc0c7myOva9vaNUcvdjp62l3Rcpzbx61umtzAAAAAAAAAAAAAAAAAAAAAAAAAAAHUXUrpez2Jpm1h2O6x+ebZKL9sYxJndPCML0Co7PZWgh3rTUN+uUFJ/Fl3tq1quWObWF63wX4m4zd0y3U2tYQ7aTlL93FtQXdNrnJ+K8C9lRFrdcVjwPCxXCKS4LCXu/wBj60Tbzwx4efArLLvPCcced8vlsZtKVbeezk4p+WE18GZdGL2ZH0rpeNmF/TCKfxyZRD5PY+P1QDrF2NHU20p72aYylFxlKLW/LDWV3Ps48PIjdfy6lqNdkexWXNTy+CX1Yvh8UT7bF0Y3W2TzuxhTF4Wf4knw9Us+wsdfCqdc1Fpv0Ytd63nFcv6l7yFtF9cmo3tr3R/hw00F7KYSfxlIhJJusvU9ptfXS8Lpw+5iH6SMgAAAAAAAAAAAAAAAAAAAAAAAACqRQyPRvT9prdLW+Vl9EfvWRX5gdg6Oncrrr+xCEeHL0YpcPcWG216GfsuLfqUk2ZU+GpqUk01wfBlY3VlTlNyx4j4njVX7kc82+EV3yk+SRY1xvr9CKjOK+jl4cV4PxLvR6aTl2ljzP6uFiFeee6u9+bK+uM7bxP2yvJOrrZ+n3IRi3lrO8/GTeZP3tl0+RSKPT/8ARFu7tcmppFNsbjnarM7tmojWmscP+HUOOe7OV7UWeiojwcZ7ynPRLG64yThP0m1y4qruf1WfXal8MZnByzZq7FiWGuyuWO7D4Lv8PM81OEEpQcmo3WzeUk0o0WWJLjxXpp58zGuZ+kWoVms1VieVO++SfjvWSefiY4rJ5eXzZQAAAAAAAAAAAAAAAAAAAAAAAAASnqv03abY0MX3XRn/AJadn6CLE/6jdNv7Zpk1+6rvn6vm3DP94HTKGAiqA89mj3FFUEB6C5oHw19u7VZP7MLJe6LAh9+oju6eM4RkpQhvZ3lJLUb6eGn3tJe0stt3qGgvsr3otaPaEllpyjONcKU8pLv7y92ne65KvdhKMKVhSj31KM36Sw+T8eZhesDURhsrWSjHC+TwSWc47fVeL9WQOcwAAAAAAAAAAAAAAAAAAAAAAAAAANq/s76ZvaOot4YhppLzzO2vHwjI1Ubp/Zvp9LX2Y5LTRT9btbX9qA3eiqKIq3wAstJTcrHKzc3eOMOW94LOeHIyCLHZ91ks78JRWFjexxfHPDHqL5FZb31OOtcVLHbf/L2r7UHD77UPzL4sNtfu0vGzT/C2Mn8EyVMHtfUTV0Y/UbqWHBOMu0c4Pmu57j4d3rIZ1xWqGzL4rgp2aGlJckoxnbj8CaavtVqE1vqD4Pm4ei4z5cuK3l7Ga669bktHCPfPWSkvVXp4wfxkBpEAAAAAAAAAAAAAAAAAAAAAAAAAADf/AOzrTjQ6qf2tQo+fo1xf6zQB0n1Dafd2PGX8S6+Xu3YfoA2KjxfaoxlNtJRTbbzhJc+R7KgW+h1asTaawnjlJcefei7R5SPSNut8ZN/qpjtrvjQvG78KrH+KRkTE7YtSsp3nhJXzb9W5H9ZjVroNpdpHelVZU96yO7ZBqT3JygpeqW7vLykjTnXtc3HQx8Z7Qn683RivhD4m6+0Rp7rv2HJ6PQa9N4UVTZHuW/vWwl799P8ApA02AAAAAAAAAAAAAAAAAAAAAAAAAAB1L1Padw2Lo01xkrZvz3rrGvg4nLR1z0Cp3Nl6CLWGtNQ2vNwTf4gZ8qUR86NTCbkoSTcXiSXcwPuVRQqgKmG2vWp3RjJJpVTynyanOP8A8GZI7tmpzumk2nGvT45PLUrJYafjlAfK2MoQslvPEYSaW9J8k33mA64aUtg3Rx+7Wkx5NW1x/BszWpcnVYmkt5bqxFx+k93GMvPMxXXdNLYupX2paeK/zoP9IHMYAAAAAAAAAAAAAAAAAAAAAAAAAAHZmx6dzT0V/Yqqj92CX5HGZ2rWuC9SA86qU1CThjeSys5x58vLJj9DRZGMbFGKzCuMYpcd3Dbcstcd6S7+4yqPQFsp27yzFbuePFcFx/2LsoVAMi+24zlbaoZz2kIPDw0vk64+xzRKCG7ajKbm4uOXbdJZnGLbqlCHDPdiEsvyA87O7WSgrd/Mp6ThLPB7yc0s/wAp562Ng363QLTaeVcZyurk+0m4xcYxnwTSfHLj7j77FolGdUJclfY4+ln0FXOSfvkiEftH6vFGhpT+lZdZ9yMIr/UfxA0frNNKuydU8b1cpQlhprMW08Nc1lcz4gAAAAAAAAAAAAAAAAAAAAAAAAADsvY+sjdp6LovMbaqpr1Sgn+Zxobd6qetGrS0x0OvclVBvsbknLs03lwnFcd3LeGs4zjGOQb7RUx+zNs6bUR3tPqKrV/27Iyx60nle0v8gej0eMlcgVckuLeEstvwS4/kR+nZMra6bG0pOMbHFp/SnKU7E34NTx7D59L9tQrh2G8t670Ws8VX/wBSXlw9Feb8mWUOl0PFJLz4JAZbZ+i7O6EMp9nXY3j/ABzUa/bu1yNLftE7Q39fRQuVNCb/AJrJtv4RgbY0+24QhbqrpbkZem3LhuVwjiKf90seM8HM/S7bctbrtRq2sdrNuK71BJRgn5qMYoDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPVdkotSi2muTTaa9qM7oOmu1Kf3Wv1KXDg7pzj92eUYAATzSdb22Yc9RCf89FP4xSPrqOuTbEouKspjnvjTHK97aNfADP29LtXObnZPflL6Upbzk/bnl5dx96Oml8GnGuptct9Tkk/FLKXvTIyAM1tzpVrNWt2+5uHPcilGGfNLn7cmFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k=",
         "description": "Wi-Fi range extender with dual-band support and easy setup.",
         "price": 49.99,
         "category": "Electronics",
@@ -321,7 +321,7 @@
     },
     {
         "name": "Digital Drawing Tablet",
-        "image": "https://example.com/images/drawing-tablet.jpg",
+        "image": "data:image/jpeg;base64,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pOb3K4hwmmbvkdIeUUZP55LD3L26SNuthfmdT5lUziN+qCe4aeaC9a2NvUp298zy/wDIzK34r2a2S1hLkb9WFrYh5sAPvVrQ0NXUm0EL3n7LXO8yBYeayzC+iXEpbGXJC0/Xfr+Fl/eQgxB74wbnU83G58yqZreXuFh5rcmEdDFKyxnnkkPEMAjb56u96zPC9jaCnsYqWMOHtOGd34nXKDnfDsFrqn9xTSO7Q05fxGzfesrwzoer5dZ5I4Ryvnd+Fun5lvkC2gX1BrfCehqhjsZnyzHvDG+TfW96zPC9m6On/cU0TDzDQXfiOqlUQEREBa+6WdiZa5jJaYj00QIyE2EjDrYE6BwO6/MrYKIOOcVo54XFk0T43DQh7C34jVR2bu8l2pJE13WaD3gH4qj/AIfD/Bj/AAN/RBxmJf7si7OFFF/CZ+Bv6IgroiIC8SxNcLOaHDtAPxXtEENV7KUMvXpIT2hgafNtlB1nRdhr90ckZ+xI74OuFmqINX1nQ3Cf3VVI377GvHuyqFrOh6rH7ueF/wB7Mw/ArdSIOeqvo0xNm6AP+5Iw+4kFQ9VsxXRdeknH8txHm266dRByhJmZo4OaftXafej6lxFi4kdpJXVU1Ox+j2NcPtNB+KiKzY/D5evRwE8wwNPm2yDmN0QN7Oy6efYqcwc42fI49gufhouhqvorwx+6J7D9iR3wdcK5wzo4w2HX0HpDzlcX/l6vuQc5UeEPlOWGF7z2AuPk0FZhhfRfic1s0fom85HBmn3Rd3uXQtPTsjGWNjWDk1oaPIKqg1NhXQnELGoqXO7Imgfnff4BZlhWwGHQWLaZrnD2pbyH82g8lk6IPMbA0WaAAOAFh5BekRAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf//Z",
         "description": "Digital drawing tablet with pressure-sensitive pen and customizable shortcuts.",
         "price": 89.99,
         "category": "Electronics",
@@ -331,7 +331,7 @@
     },
     {
         "name": "Smart Light Bulbs",
-        "image": "https://example.com/images/smart-light-bulbs.jpg",
+        "image": "https://i5.walmartimages.com/seo/Smart-Light-Bulb-Wifi-Bulb-Color-Changing-LED-Bluetooth-Bulbs-APP-Remote-Controlled-Home-Lamp-Compatible-Alexa-Google-Assistant_1cba82fc-0e92-4d71-9b8a-38b182274c72_1.52bd96b1839a4c777e202ad19fe2492e.jpeg",
         "description": "Smart LED light bulbs with app control and voice assistant compatibility.",
         "price": 29.99,
         "category": "Electronics",
@@ -341,7 +341,7 @@
     },
     {
         "name": "Electric Blanket",
-        "image": "https://example.com/images/electric-blanket.jpg",
+        "image": "https://www.medistorebd.com/wp-content/uploads/2024/01/486553675_max.jpg",
         "description": "Plush electric blanket with adjustable heat settings and auto shut-off.",
         "price": 49.99,
         "category": "Home Appliances",
@@ -351,7 +351,7 @@
     },
     {
         "name": "Bluetooth Car Kit",
-        "image": "https://example.com/images/bluetooth-car-kit.jpg",
+        "image": "https://m.media-amazon.com/images/I/71sDZ0DKypL.jpg",
         "description": "Bluetooth car kit with hands-free calling and FM transmitter.",
         "price": 24.99,
         "category": "Automotive",
@@ -361,7 +361,7 @@
     },
     {
         "name": "Digital Air Fryer",
-        "image": "https://example.com/images/air-fryer.jpg",
+        "image": "https://i5.walmartimages.com/seo/Gourmia-6-Qt-Digital-Air-Fryer-with-Guided-Cooking-Black-GAF686-New-13-2-H_b18088f6-dde3-4b90-aac0-45c71f76b505.739301224f3bcdbccb25731f31dc416f.jpeg",
         "description": "Digital air fryer with adjustable temperature control and non-stick basket.",
         "price": 89.99,
         "category": "Kitchen Appliances",
@@ -371,7 +371,7 @@
     },
     {
         "name": "Cordless Drill",
-        "image": "https://example.com/images/cordless-drill.jpg",
+        "image": "https://airdeal.com.bd/images/thumbs/0002290_ingco-cdli12415-lithium-ion-cordless-drill_625.jpg",
         "description": "Cordless drill with rechargeable battery and multiple speed settings.",
         "price": 59.99,
         "category": "Tools",
@@ -381,7 +381,7 @@
     },
     {
         "name": "Smart Doorbell Camera",
-        "image": "https://example.com/images/doorbell-camera.jpg",
+        "image": "https://m.media-amazon.com/images/I/61Q7MwZvUsL._AC_UF1000,1000_QL80_.jpg",
         "description": "Smart doorbell camera with 1080p video, night vision, and two-way audio.",
         "price": 99.99,
         "category": "Home Security",
@@ -391,7 +391,7 @@
     },
     {
         "name": "Portable Power Bank",
-        "image": "https://example.com/images/power-bank.jpg",
+        "image": "https://www.bdshop.com/pub/media/catalog/product/cache/0a9842a5e3033a11158d10717601d786/v/o/voltme_hypercore_10k_portable_charger_power_bank.jpg",
         "description": "Portable power bank with 10000mAh capacity and fast charging support.",
         "price": 29.99,
         "category": "Electronics",
