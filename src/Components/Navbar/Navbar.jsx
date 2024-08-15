@@ -84,9 +84,7 @@ const Navbar = () => {
                             </>
                         ) : (
                             <>
-                                <Link to="/profile" className="px-4 py-2 hover:bg-purple-800 lg:hover:bg-transparent flex items-center">
-                                    <FaUser className="mr-1" /> Profile
-                                </Link>
+
 
                                 <Link to="/cart" className="block px-4 py-2 hover:bg-indigo-800 lg:hover:bg-transparent">
                                     <FaShoppingCart className="w-6 h-6" />

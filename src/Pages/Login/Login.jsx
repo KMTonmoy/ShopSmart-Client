@@ -1,88 +1,90 @@
-import { useContext, useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import Swal from 'sweetalert2';
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [showPassword, setShowPassword] = useState(false);
-    const [error, setError] = useState('');   
+    const { signInWithGoogle, signInWithEmailPassword } = useContext(AuthContext);
     const navigate = useNavigate();
-    const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
+    const [formData, setFormData] = useState({
+        email: '',
+        password: '',
+    });
 
-    const handleLogin = async (e) => {
-        e.preventDefault();
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevState) => ({
+            ...prevState,
+            [name]: value,
+        }));
+    };
+
+    const handleGoogleLogin = async () => {
         try {
-            await signIn(email, password);
-            toast.success('Login successful!');
-
-            Swal.fire({
-                title: 'Welcome Back!',
-                text: 'You have successfully logged in.',
-                icon: 'success',
-                confirmButtonText: 'Go to Page',
-                confirmButtonColor: '#3085d6'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    navigate('/');
-                } else {
-                    navigate(from, { replace: true });
-                }
-            });
+            await signInWithGoogle();
+            toast.success('Logged in with Google!');
+            navigate('/');
         } catch (error) {
-            setError(error.message);
-            toast.error('Login failed. Please try again.');
+            console.error('Google login failed:', error.message);
+            toast.error('Failed to log in with Google. Please try again.');
         }
     };
 
-    const togglePasswordVisibility = () => {
-        setShowPassword(!showPassword);
+    const handleEmailPasswordLogin = async (e) => {
+        e.preventDefault();
+        try {
+            await signInWithEmailPassword(formData.email, formData.password);
+            toast.success('Logged in successfully!');
+            navigate('/');
+        } catch (error) {
+            console.error('Email/password login failed:', error.message);
+            toast.error('Failed to log in. Please check your credentials and try again.');
+        }
     };
 
     return (
         <div className="my-10 flex items-center justify-center">
             <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-bold text-center mb-8 text-blue-600">Login to Your Account</h2>
-                <form onSubmit={handleLogin} className="space-y-6">
+                <h2 className="text-2xl font-bold text-center mb-8">Login to Your Account</h2>
+
+                <button
+                    onClick={handleGoogleLogin}
+                    className="w-full inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mb-4"
+                >
+                    <FcGoogle className="mr-2" size={20} />
+                    Continue with Google
+                </button>
+
+                <div className="relative text-center my-4">
+                    <span className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 bg-white px-2 text-gray-500">OR</span>
+                    <div className="h-px bg-gray-300"></div>
+                </div>
+
+                <form onSubmit={handleEmailPasswordLogin} className="space-y-6">
                     <div>
                         <label htmlFor="email" className="block text-lg font-medium text-gray-700">Email</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            value={formData.email}
+                            onChange={handleChange}
                             required
                             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                         />
                     </div>
-                    <div className="relative">
+                    <div>
                         <label htmlFor="password" className="block text-lg font-medium text-gray-700">Password</label>
                         <input
-                            type={showPassword ? 'text' : 'password'}
+                            type="password"
                             id="password"
                             name="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            value={formData.password}
+                            onChange={handleChange}
                             required
                             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                         />
-                        <button
-                            type="button"
-                            onClick={togglePasswordVisibility}
-                            className="absolute inset-y-0 right-0 flex items-center px-3 text-gray-600 focus:outline-none"
-                        >
-                            {showPassword ? (
-                                <FaRegEye className='text-2xl mt-8' />
-                            ) : (
-                                <FaRegEyeSlash className='text-2xl mt-8' />
-                            )}
-                        </button>
                     </div>
                     <div>
                         <button
@@ -93,7 +95,6 @@ const Login = () => {
                         </button>
                     </div>
                 </form>
-                {error && <p className="mt-2 text-sm text-red-500 text-center">{error}</p>}
             </div>
         </div>
     );

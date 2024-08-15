@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 
 import { imageUpload } from '../../api/utils/index';
 import { AuthContext } from '../../providers/AuthProvider';
+import { FcGoogle } from 'react-icons/fc';
 
 const Signup = () => {
     const [name, setName] = useState('');
@@ -81,6 +82,20 @@ const Signup = () => {
             <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md">
                 <h2 className="text-3xl font-bold text-center text-blue-600">Create an Account</h2>
                 <form onSubmit={handleSignup} className="space-y-4 mt-6">
+
+                    <button
+                        onClick={handleGoogleSignIn}
+                        className="w-full inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mb-4"
+                    >
+                        <FcGoogle className="mr-2" size={20} />
+                        Continue with Google
+                    </button>
+
+                    <div className="relative text-center my-4">
+                        <span className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 bg-white px-2 text-gray-500">OR</span>
+                        <div className="h-px bg-gray-300"></div>
+                    </div>
+
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                             Name
@@ -153,15 +168,7 @@ const Signup = () => {
                         Sign Up
                     </button>
                 </form>
-                <div className="flex items-center justify-center mt-4">
-                    <button
-                        onClick={handleGoogleSignIn}
-                        className="flex items-center px-4 py-2 text-lg font-semibold text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500"
-                    >
-                        <FaGoogle className="mr-2" />
-                        Sign Up with Google
-                    </button>
-                </div>
+
                 <div className="text-sm text-gray-600 text-center mt-4">
                     Already have an account?{' '}
                     <Link to="/login" className="text-blue-600 hover:underline">
