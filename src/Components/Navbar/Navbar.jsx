@@ -58,9 +58,7 @@ const Navbar = () => {
                     <Link to="/products" className="block px-4 py-2 hover:bg-purple-800 lg:hover:bg-transparent">
                         Products
                     </Link>
-                    <Link to="/categories" className="block px-4 py-2 hover:bg-indigo-800 lg:hover:bg-transparent">
-                        Categories
-                    </Link>
+
                     <Link to="/about" className="block px-4 py-2 hover:bg-blue-800 lg:hover:bg-transparent">
                         About Us
                     </Link>
@@ -68,12 +66,20 @@ const Navbar = () => {
                         Contact
                     </Link>
 
-                    <Link to="/login" className="px-4 py-2 hover:bg-blue-800 lg:hover:bg-transparent flex items-center">
-                        <FaSignInAlt className="mr-1" /> Login
-                    </Link>
+
                     <Link to="/profile" className="px-4 py-2 hover:bg-purple-800 lg:hover:bg-transparent flex items-center">
                         <FaUser className="mr-1" /> Profile
                     </Link>
+
+
+                    <Link to="/login" className="px-4 py-2 hover:bg-blue-800 lg:hover:bg-transparent flex items-center">
+                        <FaSignInAlt className="mr-1" /> Login
+                    </Link>
+                    <Link to="/login" className="px-4 py-2 hover:bg-blue-800 lg:hover:bg-transparent flex items-center">
+                        <FaSignInAlt className="mr-1" /> Sign Up
+                    </Link>
+
+
                     <Link to="/cart" className="block px-4 py-2 hover:bg-indigo-800 lg:hover:bg-transparent">
                         <FaShoppingCart className="w-6 h-6" />
                     </Link>

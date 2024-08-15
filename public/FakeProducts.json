@@ -1,0 +1,402 @@
+[
+    {
+        "name": "Wireless Bluetooth Headphones",
+        "image": "https://example.com/images/headphones.jpg",
+        "description": "High-quality wireless Bluetooth headphones with noise-cancellation and 20 hours of battery life.",
+        "price": 59.99,
+        "category": "Electronics",
+        "brand": "SoundMax",
+        "ratings": 4.5,
+        "created_at": "2024-08-10T14:00:00Z"
+    },
+    {
+        "name": "4K Ultra HD Smart TV",
+        "image": "https://example.com/images/smart-tv.jpg",
+        "description": "55-inch 4K Ultra HD Smart TV with HDR and built-in streaming apps.",
+        "price": 799.99,
+        "category": "Electronics",
+        "brand": "VisionPlus",
+        "ratings": 4.8,
+        "created_at": "2024-08-11T10:30:00Z"
+    },
+    {
+        "name": "Running Shoes",
+        "image": "https://example.com/images/running-shoes.jpg",
+        "description": "Lightweight running shoes with cushioned soles for maximum comfort and performance.",
+        "price": 69.99,
+        "category": "Footwear",
+        "brand": "Speedster",
+        "ratings": 4.2,
+        "created_at": "2024-08-12T08:15:00Z"
+    },
+    {
+        "name": "Smartphone with Triple Camera",
+        "image": "https://example.com/images/smartphone.jpg",
+        "description": "Latest smartphone with a triple camera setup, fast processor, and long-lasting battery.",
+        "price": 699.99,
+        "category": "Electronics",
+        "brand": "TechWave",
+        "ratings": 4.6,
+        "created_at": "2024-08-13T16:45:00Z"
+    },
+    {
+        "name": "Stainless Steel Water Bottle",
+        "image": "https://example.com/images/water-bottle.jpg",
+        "description": "Eco-friendly stainless steel water bottle with double-wall insulation to keep drinks cold or hot.",
+        "price": 19.99,
+        "category": "Accessories",
+        "brand": "EcoFlow",
+        "ratings": 4.7,
+        "created_at": "2024-08-14T12:00:00Z"
+    },
+    {
+        "name": "Gaming Keyboard with RGB Lighting",
+        "image": "https://example.com/images/gaming-keyboard.jpg",
+        "description": "Mechanical gaming keyboard with customizable RGB lighting and programmable keys.",
+        "price": 89.99,
+        "category": "Electronics",
+        "brand": "GamerPro",
+        "ratings": 4.4,
+        "created_at": "2024-08-15T09:30:00Z"
+    },
+    {
+        "name": "Leather Office Chair",
+        "image": "https://example.com/images/office-chair.jpg",
+        "description": "Ergonomic leather office chair with adjustable height and lumbar support.",
+        "price": 149.99,
+        "category": "Furniture",
+        "brand": "ComfortPlus",
+        "ratings": 4.3,
+        "created_at": "2024-08-16T11:00:00Z"
+    },
+    {
+        "name": "Wireless Charging Pad",
+        "image": "https://example.com/images/charging-pad.jpg",
+        "description": "Sleek wireless charging pad compatible with all Qi-enabled devices.",
+        "price": 29.99,
+        "category": "Accessories",
+        "brand": "ChargeNow",
+        "ratings": 4.5,
+        "created_at": "2024-08-17T14:30:00Z"
+    },
+    {
+        "name": "Fitness Tracker",
+        "image": "https://example.com/images/fitness-tracker.jpg",
+        "description": "Fitness tracker with heart rate monitor, step counter, and sleep analysis.",
+        "price": 49.99,
+        "category": "Wearables",
+        "brand": "FitGear",
+        "ratings": 4.6,
+        "created_at": "2024-08-18T07:45:00Z"
+    },
+    {
+        "name": "Portable Bluetooth Speaker",
+        "image": "https://example.com/images/bluetooth-speaker.jpg",
+        "description": "Compact portable Bluetooth speaker with powerful bass and long battery life.",
+        "price": 39.99,
+        "category": "Electronics",
+        "brand": "SoundBoom",
+        "ratings": 4.8,
+        "created_at": "2024-08-19T13:20:00Z"
+    },
+    {
+        "name": "Electric Kettle",
+        "image": "https://example.com/images/electric-kettle.jpg",
+        "description": "Fast-boiling electric kettle with automatic shut-off and stainless steel design.",
+        "price": 24.99,
+        "category": "Kitchen Appliances",
+        "brand": "QuickBoil",
+        "ratings": 4.7,
+        "created_at": "2024-08-20T09:00:00Z"
+    },
+    {
+        "name": "Coffee Maker",
+        "image": "https://example.com/images/coffee-maker.jpg",
+        "description": "12-cup coffee maker with programmable settings and thermal carafe.",
+        "price": 59.99,
+        "category": "Kitchen Appliances",
+        "brand": "BrewMaster",
+        "ratings": 4.4,
+        "created_at": "2024-08-21T10:30:00Z"
+    },
+    {
+        "name": "Laptop Backpack",
+        "image": "https://example.com/images/laptop-backpack.jpg",
+        "description": "Durable laptop backpack with multiple compartments and USB charging port.",
+        "price": 39.99,
+        "category": "Accessories",
+        "brand": "UrbanTech",
+        "ratings": 4.6,
+        "created_at": "2024-08-22T11:45:00Z"
+    },
+    {
+        "name": "Digital Watch",
+        "image": "https://example.com/images/digital-watch.jpg",
+        "description": "Water-resistant digital watch with alarm, stopwatch, and backlight.",
+        "price": 19.99,
+        "category": "Wearables",
+        "brand": "TimeMaster",
+        "ratings": 4.2,
+        "created_at": "2024-08-23T14:15:00Z"
+    },
+    {
+        "name": "Electric Toothbrush",
+        "image": "https://example.com/images/electric-toothbrush.jpg",
+        "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+        "price": 29.99,
+        "category": "Personal Care",
+        "brand": "CleanSmile",
+        "ratings": 4.5,
+        "created_at": "2024-08-24T08:00:00Z"
+    },
+    {
+        "name": "Smart Home Hub",
+        "image": "https://example.com/images/smart-home-hub.jpg",
+        "description": "Control all your smart devices with this smart home hub with voice control.",
+        "price": 79.99,
+        "category": "Electronics",
+        "brand": "HomeTech",
+        "ratings": 4.6,
+        "created_at": "2024-08-25T09:30:00Z"
+    },
+    {
+        "name": "Noise-Cancelling Earbuds",
+        "image": "https://example.com/images/noise-cancelling-earbuds.jpg",
+        "description": "In-ear noise-cancelling earbuds with long battery life and superior sound quality.",
+        "price": 99.99,
+        "category": "Electronics",
+        "brand": "ClearSound",
+        "ratings": 4.7,
+        "created_at": "2024-08-26T14:45:00Z"
+    },
+    {
+        "name": "Wireless Mouse",
+        "image": "https://example.com/images/wireless-mouse.jpg",
+        "description": "Ergonomic wireless mouse with adjustable DPI and long battery life.",
+        "price": 19.99,
+        "category": "Electronics",
+        "brand": "ClickPro",
+        "ratings": 4.4,
+        "created_at": "2024-08-27T12:00:00Z"
+    },
+    {
+        "name": "Standing Desk",
+        "image": "https://example.com/images/standing-desk.jpg",
+        "description": "Adjustable height standing desk with spacious work surface.",
+        "price": 199.99,
+        "category": "Furniture",
+        "brand": "WorkFit",
+        "ratings": 4.6,
+        "created_at": "2024-08-28T13:30:00Z"
+    },
+    {
+        "name": "Wireless Security Camera",
+        "image": "https://example.com/images/security-camera.jpg",
+        "description": "1080p wireless security camera with night vision and motion detection.",
+        "price": 49.99,
+        "category": "Electronics",
+        "brand": "SecureHome",
+        "ratings": 4.5,
+        "created_at": "2024-08-29T10:15:00Z"
+    },
+    {
+        "name": "Electric Rice Cooker",
+        "image": "https://example.com/images/rice-cooker.jpg",
+        "description": "Multi-function electric rice cooker with automatic keep-warm feature.",
+        "price": 34.99,
+        "category": "Kitchen Appliances",
+        "brand": "CookMaster",
+        "ratings": 4.6,
+        "created_at": "2024-08-30T08:45:00Z"
+    },
+    {
+        "name": "Digital Camera",
+        "image": "https://example.com/images/digital-camera.jpg",
+        "description": "Compact digital camera with 20MP sensor and 4x optical zoom.",
+        "price": 149.99,
+        "category": "Electronics",
+        "brand": "SnapShot",
+        "ratings": 4.3,
+        "created_at": "2024-08-31T11:00:00Z"
+    },
+    {
+        "name": "Electric Shaver",
+        "image": "https://example.com/images/electric-shaver.jpg",
+        "description": "Rechargeable electric shaver with precision blades and wet/dry use.",
+        "price": 29.99,
+        "category": "Personal Care",
+        "brand": "ShavePro",
+        "ratings": 4.5,
+        "created_at": "2024-09-01T07:30:00Z"
+    },
+    {
+        "name": "Smart Thermostat",
+        "image": "https://example.com/images/smart-thermostat.jpg",
+        "description": "Smart thermostat with Wi-Fi connectivity and energy-saving features.",
+        "price": 129.99,
+        "category": "Electronics",
+        "brand": "EcoControl",
+        "ratings": 4.6,
+        "created_at": "2024-09-02T14:00:00Z"
+    },
+    {
+        "name": "Electric Pressure Cooker",
+        "image": "https://example.com/images/pressure-cooker.jpg",
+        "description": "6-quart electric pressure cooker with multiple cooking modes and delay timer.",
+        "price": 79.99,
+        "category": "Kitchen Appliances",
+        "brand": "PressureChef",
+        "ratings": 4.7,
+        "created_at": "2024-09-03T10:45:00Z"
+    },
+    {
+        "name": "Bluetooth Fitness Scale",
+        "image": "https://example.com/images/fitness-scale.jpg",
+        "description": "Bluetooth-enabled fitness scale with body composition analysis and smartphone app.",
+        "price": 49.99,
+        "category": "Health",
+        "brand": "FitScale",
+        "ratings": 4.4,
+        "created_at": "2024-09-04T08:00:00Z"
+    },
+    {
+        "name": "Wireless Earbuds",
+        "image": "https://example.com/images/wireless-earbuds.jpg",
+        "description": "True wireless earbuds with touch controls and charging case.",
+        "price": 59.99,
+        "category": "Electronics",
+        "brand": "SoundCore",
+        "ratings": 4.5,
+        "created_at": "2024-09-05T12:30:00Z"
+    },
+    {
+        "name": "Electric Hand Mixer",
+        "image": "https://example.com/images/hand-mixer.jpg",
+        "description": "Electric hand mixer with multiple speed settings and durable beaters.",
+        "price": 19.99,
+        "category": "Kitchen Appliances",
+        "brand": "MixMaster",
+        "ratings": 4.3,
+        "created_at": "2024-09-06T09:15:00Z"
+    },
+    {
+        "name": "Noise-Cancelling Headphones",
+        "image": "https://example.com/images/noise-cancelling-headphones.jpg",
+        "description": "Over-ear noise-cancelling headphones with high-fidelity sound and long battery life.",
+        "price": 99.99,
+        "category": "Electronics",
+        "brand": "QuietSound",
+        "ratings": 4.7,
+        "created_at": "2024-09-07T13:45:00Z"
+    },
+    {
+        "name": "Digital Kitchen Scale",
+        "image": "https://example.com/images/kitchen-scale.jpg",
+        "description": "Precision digital kitchen scale with tare function and easy-to-read display.",
+        "price": 14.99,
+        "category": "Kitchen Appliances",
+        "brand": "WeighRight",
+        "ratings": 4.6,
+        "created_at": "2024-09-08T07:30:00Z"
+    },
+    {
+        "name": "Electric Space Heater",
+        "image": "https://example.com/images/space-heater.jpg",
+        "description": "Portable electric space heater with adjustable thermostat and safety features.",
+        "price": 39.99,
+        "category": "Home Appliances",
+        "brand": "WarmHome",
+        "ratings": 4.5,
+        "created_at": "2024-09-09T08:00:00Z"
+    },
+    {
+        "name": "Wi-Fi Range Extender",
+        "image": "https://example.com/images/wifi-extender.jpg",
+        "description": "Wi-Fi range extender with dual-band support and easy setup.",
+        "price": 49.99,
+        "category": "Electronics",
+        "brand": "NetExtend",
+        "ratings": 4.3,
+        "created_at": "2024-09-10T09:00:00Z"
+    },
+    {
+        "name": "Digital Drawing Tablet",
+        "image": "https://example.com/images/drawing-tablet.jpg",
+        "description": "Digital drawing tablet with pressure-sensitive pen and customizable shortcuts.",
+        "price": 89.99,
+        "category": "Electronics",
+        "brand": "ArtMaster",
+        "ratings": 4.6,
+        "created_at": "2024-09-11T11:00:00Z"
+    },
+    {
+        "name": "Smart Light Bulbs",
+        "image": "https://example.com/images/smart-light-bulbs.jpg",
+        "description": "Smart LED light bulbs with app control and voice assistant compatibility.",
+        "price": 29.99,
+        "category": "Electronics",
+        "brand": "BrightHome",
+        "ratings": 4.7,
+        "created_at": "2024-09-12T10:30:00Z"
+    },
+    {
+        "name": "Electric Blanket",
+        "image": "https://example.com/images/electric-blanket.jpg",
+        "description": "Plush electric blanket with adjustable heat settings and auto shut-off.",
+        "price": 49.99,
+        "category": "Home Appliances",
+        "brand": "CozyWarm",
+        "ratings": 4.8,
+        "created_at": "2024-09-13T14:00:00Z"
+    },
+    {
+        "name": "Bluetooth Car Kit",
+        "image": "https://example.com/images/bluetooth-car-kit.jpg",
+        "description": "Bluetooth car kit with hands-free calling and FM transmitter.",
+        "price": 24.99,
+        "category": "Automotive",
+        "brand": "DriveSafe",
+        "ratings": 4.5,
+        "created_at": "2024-09-14T09:15:00Z"
+    },
+    {
+        "name": "Digital Air Fryer",
+        "image": "https://example.com/images/air-fryer.jpg",
+        "description": "Digital air fryer with adjustable temperature control and non-stick basket.",
+        "price": 89.99,
+        "category": "Kitchen Appliances",
+        "brand": "CrispMaster",
+        "ratings": 4.7,
+        "created_at": "2024-09-15T12:00:00Z"
+    },
+    {
+        "name": "Cordless Drill",
+        "image": "https://example.com/images/cordless-drill.jpg",
+        "description": "Cordless drill with rechargeable battery and multiple speed settings.",
+        "price": 59.99,
+        "category": "Tools",
+        "brand": "PowerTools",
+        "ratings": 4.4,
+        "created_at": "2024-09-16T11:30:00Z"
+    },
+    {
+        "name": "Smart Doorbell Camera",
+        "image": "https://example.com/images/doorbell-camera.jpg",
+        "description": "Smart doorbell camera with 1080p video, night vision, and two-way audio.",
+        "price": 99.99,
+        "category": "Home Security",
+        "brand": "SecureRing",
+        "ratings": 4.6,
+        "created_at": "2024-09-17T13:00:00Z"
+    },
+    {
+        "name": "Portable Power Bank",
+        "image": "https://example.com/images/power-bank.jpg",
+        "description": "Portable power bank with 10000mAh capacity and fast charging support.",
+        "price": 29.99,
+        "category": "Electronics",
+        "brand": "ChargeFast",
+        "ratings": 4.5,
+        "created_at": "2024-09-18T08:00:00Z"
+    }
+]
