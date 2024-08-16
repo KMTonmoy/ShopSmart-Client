@@ -19,7 +19,6 @@ const Cart = () => {
             try {
                 const response = await fetch('http://localhost:8000/carts');
                 const data = await response.json();
-                // Filter items by user email
                 const filteredItems = data.filter(item => item.userEmail === userEmail);
                 setCartItems(filteredItems);
             } catch (error) {
@@ -31,51 +30,59 @@ const Cart = () => {
     }, [userEmail]);
 
     const handleDelete = async (productId) => {
-        try {
-            const response = await fetch(`http://localhost:8000/carts/${productId}`, {
-                method: 'DELETE',
-            });
+        const result = await Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to remove this item from the cart?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!',
+        });
 
-            if (response.ok) {
-                setCartItems(prevItems => prevItems.filter(item => item._id !== productId));
-            } else {
-                console.error('Failed to delete the item.');
+        if (result.isConfirmed) {
+            try {
+                const response = await fetch(`http://localhost:8000/carts/${productId}`, {
+                    method: 'DELETE',
+                });
+
+                if (response.ok) {
+                    setCartItems(prevItems => prevItems.filter(item => item._id !== productId));
+                    Swal.fire('Deleted!', 'Your item has been removed from the cart.', 'success');
+                } else {
+                    console.error('Failed to delete the item.');
+                }
+            } catch (error) {
+                console.error('Error deleting cart item:', error);
             }
-        } catch (error) {
-            console.error('Error deleting cart item:', error);
         }
     };
 
-    // Calculate total price
     const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
     const grandTotal = totalPrice + deliveryCharge;
 
     const handlePlaceOrder = () => {
         setIsModalOpen(true);
     };
+
     const handleConfirmOrder = async () => {
         try {
-
             const response = await fetch(`http://localhost:8000/cartss/${userEmail}`, {
                 method: 'DELETE',
                 headers: {
-                    'Content-Type': 'application/json'
-                }
+                    'Content-Type': 'application/json',
+                },
             });
 
             if (response.ok) {
-                // Clear the cart items in the UI
                 setCartItems([]);
-
-                // Close the modal
                 setIsModalOpen(false);
 
-                // Show success Swal
                 Swal.fire({
                     icon: 'success',
                     title: 'Order Placed Successfully',
                     text: 'Your order has been placed!',
-                    confirmButtonText: 'OK'
+                    confirmButtonText: 'OK',
                 });
             } else {
                 console.error('Failed to delete cart items.');
@@ -85,50 +92,30 @@ const Cart = () => {
         }
     };
 
-
     return (
-        <div className="container mx-auto py-12">
+        <div className="container mx-auto py-12 px-4">
             <h1 className="text-2xl font-bold mb-6">Your Cart</h1>
-            <div className="overflow-x-auto">
-                <table className="min-w-full bg-white rounded-lg shadow-lg">
-                    <thead>
-                        <tr className="bg-gray-100 text-gray-700">
-                            <th className="py-2 px-4 border">Product No</th>
-                            <th className="py-2 px-4 border">Image</th>
-                            <th className="py-2 px-4 border">Name</th>
-                            <th className="py-2 px-4 border">Price</th>
-                            <th className="py-2 px-4 border">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {cartItems.length > 0 ? (
-                            cartItems.map((item, index) => (
-                                <tr key={item.productId} className="text-center">
-                                    <td className="py-2 px-4 border">{index + 1}</td>
-                                    <td className="py-2 px-4 border">
-                                        <img src={item.image} alt={item.name} className="w-16 h-16 object-cover mx-auto" />
-                                    </td>
-                                    <td className="py-2 px-4 border">{item.name}</td>
-                                    <td className="py-2 px-4 border">${item.price.toFixed(2)}</td>
-                                    <td className="py-2 px-4 border">
-                                        <button
-                                            onClick={() => handleDelete(item._id)}
-                                            className="bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-red-600 transition duration-300"
-                                        >
-                                            Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))
-                        ) : (
-                            <tr>
-                                <td colSpan="5" className="py-4 text-center text-gray-500">
-                                    Your cart is empty.
-                                </td>
-                            </tr>
-                        )}
-                    </tbody>
-                </table>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {cartItems.length > 0 ? (
+                    cartItems.map((item, index) => (
+                        <div key={item._id} className="bg-white p-4 rounded-lg shadow-lg">
+                            <div className="flex justify-between items-center mb-4">
+                                <h2 className="text-lg font-semibold">Product No: {index + 1}</h2>
+                                <button
+                                    onClick={() => handleDelete(item._id)}
+                                    className="bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-red-600 transition duration-300"
+                                >
+                                    Delete
+                                </button>
+                            </div>
+                            <img src={item.image} alt={item.name} className="w-full h-40 object-cover rounded-lg mb-4" />
+                            <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
+                            <p className="text-lg font-semibold">${item.price.toFixed(2)}</p>
+                        </div>
+                    ))
+                ) : (
+                    <p className="text-center text-gray-500 col-span-full">Your cart is empty.</p>
+                )}
             </div>
 
             {cartItems.length > 0 && (
@@ -146,10 +133,9 @@ const Cart = () => {
                 </div>
             )}
 
-            {/* Modal */}
             {isModalOpen && (
                 <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-lg p-8 w-96">
+                    <div className="bg-white rounded-lg p-8 w-full max-w-md">
                         <h2 className="text-2xl font-bold mb-4">Confirm Order</h2>
                         <div className="mb-4">
                             <label className="block text-sm font-medium mb-2" htmlFor="address">Address</label>

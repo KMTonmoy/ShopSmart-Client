@@ -15,6 +15,8 @@ const Products = () => {
     const [selectedCategory, setSelectedCategory] = useState('');
     const [selectedBrand, setSelectedBrand] = useState('');
     const [sortOption, setSortOption] = useState('');
+    const [minPrice, setMinPrice] = useState('');
+    const [maxPrice, setMaxPrice] = useState('');
 
     const itemsPerPage = 9;
 
@@ -24,7 +26,7 @@ const Products = () => {
 
     useEffect(() => {
         applyFilters();
-    }, [searchQuery, products, selectedCategory, selectedBrand, sortOption]);
+    }, [searchQuery, products, selectedCategory, selectedBrand, sortOption, minPrice, maxPrice]);
 
     const fetchProducts = (page) => {
         setLoading(true);
@@ -36,11 +38,9 @@ const Products = () => {
                 setFilteredProducts(allProducts);
                 setTotalPages(data.totalPages);
 
-                // Extract unique brands from the products
                 const uniqueBrands = Array.from(new Set(allProducts.map(product => product.brand)));
                 setBrands(uniqueBrands);
 
-                // Extract unique categories from the products
                 const uniqueCategories = Array.from(new Set(allProducts.map(product => product.category)));
                 setCategories(uniqueCategories);
 
@@ -69,22 +69,24 @@ const Products = () => {
             result = result.filter(product => product.brand === selectedBrand);
         }
 
-        // Sorting logic
+        if (minPrice) {
+            result = result.filter(product => product.price >= parseFloat(minPrice));
+        }
+
+        if (maxPrice) {
+            result = result.filter(product => product.price <= parseFloat(maxPrice));
+        }
+
         if (sortOption === 'priceLowToHigh') {
             result = result.sort((a, b) => a.price - b.price);
         } else if (sortOption === 'priceHighToLow') {
             result = result.sort((a, b) => b.price - a.price);
         } else if (sortOption === 'dateNewestFirst') {
-            // Sort by newest date first
             result = result.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
         }
 
-
-
         setFilteredProducts(result);
     };
-
-
 
     const handleSearchChange = (e) => {
         setInputValue(e.target.value);
@@ -122,13 +124,22 @@ const Products = () => {
         setCurrentPage(1);
     };
 
+    const handleMinPriceChange = (e) => {
+        setMinPrice(e.target.value);
+        setCurrentPage(1);
+    };
+
+    const handleMaxPriceChange = (e) => {
+        setMaxPrice(e.target.value);
+        setCurrentPage(1);
+    };
+
     if (loading) {
         return <div className='flex justify-center my-10'><span className="loading loading-bars loading-lg"></span></div>;
     }
 
     return (
         <div className="p-4 my-10">
-
             <div className="mb-4 md:px-[160px] flex flex-col flex-wrap space-y-4">
                 <div className="flex">
                     <input
@@ -172,6 +183,21 @@ const Products = () => {
                         ))}
                     </select>
 
+                    <input
+                        type="number"
+                        placeholder="Min Price"
+                        value={minPrice}
+                        onChange={handleMinPriceChange}
+                        className="p-2 border border-gray-300 rounded-md"
+                    />
+                    <input
+                        type="number"
+                        placeholder="Max Price"
+                        value={maxPrice}
+                        onChange={handleMaxPriceChange}
+                        className="p-2 border border-gray-300 rounded-md"
+                    />
+
                     <select
                         value={sortOption}
                         onChange={handleSortChange}
@@ -181,11 +207,9 @@ const Products = () => {
                         <option value="priceHighToLow">Price: Low to High</option>
                         <option value="priceLowToHigh">Price: High to Low</option>
                         <option value="dateNewestFirst">Date: Newest First</option>
-
                     </select>
                 </div>
             </div>
-
 
             {filteredProducts.length === 0 ? (
                 <div className="my-10">
@@ -197,7 +221,7 @@ const Products = () => {
                 <div className='flex justify-center'>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mb-4">
                         {filteredProducts.map(product => (
-                            <div key={product._id} className="bg-white shadow-lg  md:w-[500px] rounded-lg overflow-hidden transition-transform transform  hover:scale-105">
+                            <div key={product._id} className="bg-white shadow-lg  md:w-[400px] rounded-lg overflow-hidden transition-transform transform  hover:scale-105">
                                 <img
                                     src={product.image}
                                     alt={product.name}
@@ -227,9 +251,7 @@ const Products = () => {
                         ))}
                     </div>
                 </div>
-
             )}
-
 
             <div className="flex justify-center items-center space-x-4">
                 <button

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Details = () => {
     const data = useLoaderData();
@@ -39,13 +40,28 @@ const Details = () => {
             });
 
             if (response.ok) {
-                alert('Product added to cart successfully!');
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Order Placed Successfully',
+                    text: 'Your order has been placed!',
+                    confirmButtonText: 'OK'
+                });
             } else {
-                alert('Failed to add product to cart.');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops! Failed to add product to cart.',
+                    text: 'Your order has been placed!',
+                    confirmButtonText: 'OK'
+                });
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('An error occurred while adding the product to the cart.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Error Something went wrong!',
+                text: 'Your order has been placed!',
+                confirmButtonText: 'OK'
+            });
         }
     };
 
