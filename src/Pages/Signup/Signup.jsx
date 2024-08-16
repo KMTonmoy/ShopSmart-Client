@@ -6,6 +6,7 @@ import Swal from 'sweetalert2';
 import { imageUpload } from '../../api/utils/index';
 import { AuthContext } from '../../providers/AuthProvider';
 import { FcGoogle } from 'react-icons/fc';
+import { Helmet } from 'react-helmet';
 
 const Signup = () => {
     const [name, setName] = useState('');
@@ -82,7 +83,9 @@ const Signup = () => {
             <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md">
                 <h2 className="text-3xl font-bold text-center text-blue-600">Create an Account</h2>
                 <form onSubmit={handleSignup} className="space-y-4 mt-6">
-
+                    <Helmet>
+                        <title>Signup || Shop Smart</title>
+                    </Helmet>
                     <button
                         onClick={handleGoogleSignIn}
                         className="w-full inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mb-4"

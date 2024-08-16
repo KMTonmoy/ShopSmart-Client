@@ -19,11 +19,11 @@ const Details = () => {
     const ratings = data?.ratings || 0;
     const createdAt = data?.created_at ? new Date(data.created_at).toLocaleDateString() : "Unknown";
     const productId = data?._id || "unknown-id";
-    const productLink = `http://localhost:8000/details/${productId}`;
+    const productLink = `https://y-taupe-chi.vercel.app/details/${productId}`;
 
     const handleAddToCart = async () => {
         try {
-            const response = await fetch('http://localhost:8000/cart', {
+            const response = await fetch('https://y-taupe-chi.vercel.app/cart', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FcGoogle } from 'react-icons/fc';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
     const { signInWithGoogle, signIn } = useContext(AuthContext);
@@ -58,6 +59,9 @@ const Login = () => {
 
     return (
         <div className="my-10 flex items-center justify-center">
+            <Helmet>
+                <title>Login || ShopSmart</title>
+            </Helmet>
             <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-bold text-center mb-8">Login to Your Account</h2>
 

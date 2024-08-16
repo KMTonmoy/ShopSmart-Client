@@ -30,7 +30,7 @@ const Products = () => {
 
     const fetchProducts = (page) => {
         setLoading(true);
-        fetch(`http://localhost:8000/products?page=${page}&limit=${itemsPerPage}`)
+        fetch(`https://y-taupe-chi.vercel.app/products?page=${page}&limit=${itemsPerPage}`)
             .then(response => response.json())
             .then(data => {
                 const allProducts = data.products;

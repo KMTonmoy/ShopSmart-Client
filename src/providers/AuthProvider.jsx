@@ -51,7 +51,7 @@ const AuthProvider = ({ children }) => {
     const logOut = async () => {
         setLoading(true);
         try {
-            await axios.get(`http://localhost:8000/logout`, {
+            await axios.get(`https://y-taupe-chi.vercel.app/logout`, {
                 withCredentials: true,
             });
             await signOut(auth);
@@ -78,7 +78,7 @@ const AuthProvider = ({ children }) => {
     const getToken = async (email) => {
         try {
             const { data } = await axios.post(
-                `http://localhost:8000/jwt`,
+                `https://y-taupe-chi.vercel.app/jwt`,
                 { email },
                 { withCredentials: true }
             );
@@ -94,7 +94,7 @@ const AuthProvider = ({ children }) => {
         try {
 
             const existingUserResponse = await axios.get(
-                `http://localhost:8000/users/${user?.email}`
+                `https://y-taupe-chi.vercel.app/users/${user?.email}`
             );
             const existingUser = existingUserResponse.data;
 
@@ -111,7 +111,7 @@ const AuthProvider = ({ children }) => {
                 role: 'user',
             };
             const { data } = await axios.put(
-                `http://localhost:8000/user`,
+                `https://y-taupe-chi.vercel.app/user`,
                 currentUser
             );
             // // console.log("User saved:", data);

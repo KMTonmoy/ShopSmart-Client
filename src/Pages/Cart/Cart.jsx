@@ -17,7 +17,7 @@ const Cart = () => {
     useEffect(() => {
         const fetchCartItems = async () => {
             try {
-                const response = await fetch('http://localhost:8000/carts');
+                const response = await fetch('https://y-taupe-chi.vercel.app/carts');
                 const data = await response.json();
                 const filteredItems = data.filter(item => item.userEmail === userEmail);
                 setCartItems(filteredItems);
@@ -42,7 +42,7 @@ const Cart = () => {
 
         if (result.isConfirmed) {
             try {
-                const response = await fetch(`http://localhost:8000/carts/${productId}`, {
+                const response = await fetch(`https://y-taupe-chi.vercel.app/carts/${productId}`, {
                     method: 'DELETE',
                 });
 
@@ -67,7 +67,7 @@ const Cart = () => {
 
     const handleConfirmOrder = async () => {
         try {
-            const response = await fetch(`http://localhost:8000/cartss/${userEmail}`, {
+            const response = await fetch(`https://y-taupe-chi.vercel.app/cartss/${userEmail}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

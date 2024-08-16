@@ -47,7 +47,7 @@ export const router = createBrowserRouter([
             {
                 path: "/details/:id",
                 element: <Details />,
-                loader: ({ params }) => fetch(`http://localhost:8000/product/${params.id}`)
+                loader: ({ params }) => fetch(`https://y-taupe-chi.vercel.app/product/${params.id}`)
             },
         ]
     },

@@ -18,7 +18,7 @@ const Testimonials = () => {
     }, []);
 
     const fetchTestimonials = () => {
-        fetch('http://localhost:8000/testimonials')
+        fetch('https://y-taupe-chi.vercel.app/testimonials')
             .then((response) => response.json())
             .then((data) => setTestimonials(data))
             .catch((error) => {
@@ -34,7 +34,7 @@ const Testimonials = () => {
             name: userName,
         };
 
-        fetch('http://localhost:8000/testimonial', {
+        fetch('https://y-taupe-chi.vercel.app/testimonial', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
