@@ -1,8 +1,37 @@
-# React + Vite
+# ShopSmart Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShopSmart is an e-commerce front-end application built with React.js, allowing users to browse products, add items to their cart, and place orders.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication with Firebase.
+- Product listing and details view.
+- Add to cart and order placement.
+- Responsive design for all devices.
+
+## Tech Stack
+
+- React.js
+- Tailwind CSS
+- DaisyUI
+- SweetAlert2
+- Firebase Authentication
+
+## Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/KMTonmoy/ShopSmart-Client
+   cd shopsmart-client
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+
+4. **Run the Code On LocalHost:**
+```bash
+npm run dev
+```
+ 
