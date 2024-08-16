@@ -8,6 +8,7 @@ import Login from "../Pages/Login/Login";
 import Products from "../Pages/ProductsPage/Products";
 import Details from "../Pages/Home/Details/Details";
 import Cart from "../Pages/Cart/Cart";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const router = createBrowserRouter([
@@ -25,7 +26,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/contact",
-                element: <Contact />,
+                element: <PrivateRoute><Contact /></PrivateRoute>,
             },
             {
                 path: "/login",
@@ -41,7 +42,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/cart",
-                element: <Cart />,
+                element: <PrivateRoute><Cart /></PrivateRoute>,
             },
             {
                 path: "/details/:id",

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 import Swal from 'sweetalert2';
 
@@ -95,14 +95,31 @@ const Details = () => {
                         <div className="text-gray-600 text-lg mb-4">
                             <span>Added on: {createdAt}</span>
                         </div>
-                        <div className='flex items-center gap-5'>
-                            <button
-                                className='text-lg bg-purple-700 hover:bg-purple-800 text-white p-3 rounded-lg shadow-lg transition duration-300 ease-in-out'
-                                onClick={handleAddToCart}
-                            >
-                                Add To Cart
-                            </button>
-                        </div>
+                        {
+                            user ? (
+                                <>
+                                    <div className='flex items-center gap-5'>
+                                        <button
+                                            className='text-lg bg-purple-700 hover:bg-purple-800 text-white p-3 rounded-lg shadow-lg transition duration-300 ease-in-out'
+                                            onClick={handleAddToCart}
+                                        >
+                                            Add To Cart
+                                        </button>
+                                    </div>
+                                </>
+                            ) : (
+                                <div className='flex items-center gap-5'>
+                                    <Link to={'/login'}>
+                                        <button
+                                            className='text-lg bg-purple-700 hover:bg-purple-800 text-white p-3 rounded-lg shadow-lg transition duration-300 ease-in-out'
+                                        >
+                                            Add To Cart
+                                        </button>
+                                    </Link>
+                                </div>
+                            )
+                        }
+
                     </div>
                 </div>
             </div>

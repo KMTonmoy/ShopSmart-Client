@@ -3,9 +3,10 @@ import { AuthContext } from '../../providers/AuthProvider';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FcGoogle } from 'react-icons/fc';
+import Swal from 'sweetalert2';
 
 const Login = () => {
-    const { signInWithGoogle, signInWithEmailPassword } = useContext(AuthContext);
+    const { signInWithGoogle, signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
         email: '',
@@ -23,7 +24,14 @@ const Login = () => {
     const handleGoogleLogin = async () => {
         try {
             await signInWithGoogle();
-            toast.success('Logged in with Google!');
+            toast.success('');
+            Swal.fire({
+                icon: 'success',
+                title: 'Logged in with Google!',
+                text: 'Successfully Logged In ',
+                confirmButtonText: 'OK'
+            });
+
             navigate('/');
         } catch (error) {
             console.error('Google login failed:', error.message);
@@ -34,9 +42,14 @@ const Login = () => {
     const handleEmailPasswordLogin = async (e) => {
         e.preventDefault();
         try {
-            await signInWithEmailPassword(formData.email, formData.password);
-            toast.success('Logged in successfully!');
-            navigate('/');
+            await signIn(formData.email, formData.password);
+            Swal.fire({
+                icon: 'success',
+                title: 'Logged in Success!',
+                text: 'Successfully Logged In ',
+                confirmButtonText: 'OK'
+            });
+            navigate('/')
         } catch (error) {
             console.error('Email/password login failed:', error.message);
             toast.error('Failed to log in. Please check your credentials and try again.');
